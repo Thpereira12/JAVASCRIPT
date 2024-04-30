@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        /* E       (&&) Verdadeiro se todas expressões forem verdadeiras
+           OU      (||) Verdadeiro se pelo menos uma das expressões for verdadeira     
+           NEGAÇÃO (!)  Inverte o resultado da expressão de comparação  */ 
+
+        //true && true && false = false 
+        //if(2 == 2 && 3 >= 1 && 'a' == 'b') {
+
+        //true || true || false = true 
+        //if(2 == 2 || 3 >= 1 || 'a' == 'b') {
+            
+        //true = false 
+        /*if(!(4 == 2)) {  
+        document.write('Verdadeiro')
+
+        }
+    //false
+    else{
+        document.write('Falso')
+
+    }*/
+
+    var nota      = prompt('Digite a nota do aluno')
+    var faltas    = prompt('Digite a quantidade de faltas')
+    var media     = 7
+    var lmtfalt   = 15
+    var resultado = (nota >= media && faltas<= lmtfalt) ? 'Aprovado' : 'Reprovado'
+    //var resultado = <condicao> ? <verdadeiro> : <falso>
+
+   /* nota = parseInt(nota)
+    nota = parseInt(nota)
+
+    if(nota >= media && faltas<= lmtfalt){
+        document.write(resultado)
+    }
+    else{
+        document.write(resultado)
+
+    }*/
+    document.write(resultado)
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
