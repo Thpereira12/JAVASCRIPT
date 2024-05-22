@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+        /*
+        switch (parametro)
+        {
+
+            case 1: 
+                //se parametro == 1
+                break
+            
+            case 2:
+                //se parametro == 2
+                break
+            default:
+                //se parametro não encontrado
+        }
+            */
+
+            var parametro = prompt('Digite um numero') //Valores recebidos pelo comando promtp são recebidos STRING
+
+            switch (parseInt(parametro)) //Casting Função parseInt passa a String para valor numérico
+            {
+                case 1: 
+                document.write('Parametro 1')
+                    break
+
+                case 2: 
+                    document.write('Parametro 2')
+                    break
+                
+                default: 
+                document.write('Default')
+                console.log
+            } 
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
