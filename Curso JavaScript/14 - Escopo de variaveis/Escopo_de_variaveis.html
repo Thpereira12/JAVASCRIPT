@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        /*
+            3 Escopos 
+        - Global (Script como um todo)
+        - Função (Corresponde ao conteudo inserido em um bloco de função)
+        - Bloco (Instruções contidas dentro de comandos Ex: IF, Switch...)
+
+        Escopo de Função e escopo de bloco, visualizam variaveis de escopo global
+        Variaveis declaradas dentro de um escopo de bloco sofrem elevação (hoisting) 
+        quando declarados no escopo global o hoisting é para o escopo global 
+        caso o bloco estiver dentro de uma função sofrerá elevação no bloco da função 
+
+        */
+
+        //Escopo Global
+        var serie = 'Friends' // Variavel Global declarada é visualizado pelos escopos bloco e função 
+
+        //escopo de bloco   
+        if (true) {
+            var serie2 = 'Game of Thrones' // Variavel declarada no escopo Bloco funciona é visualizada no próprio escopo e no escopo na função
+            document.write(serie)
+        } 
+
+        document.write(serie2)
+        //document.write(serie3)
+
+
+        document.write('<br />')
+
+        //Escopo Função
+        function x() { 
+            var serie3 = 'The Walking Dead' // Variavel Declarada no escopo função é visualizada apenas em seu respectivo escopo 
+
+            document.write(serie)
+            document.write(serie2)
+            document.write(serie3)
+
+        }
+
+     x ()
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
