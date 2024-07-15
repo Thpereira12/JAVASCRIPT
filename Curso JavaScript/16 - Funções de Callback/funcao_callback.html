@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        /*
+            Callback 
+            Funcoes encaminhadas como parametros para outras funcoes
+        */
+
+        function exibirArtigo(id, callbacksucesso, callbackerro){
+            //Logica: Recuperar o id via requisição http
+
+            if (true){//Forcando verdadeiro para retorno da variavel callbacksucesso
+                callbacksucesso('Funções de callback em JS', "Funções de callback são muito utilizadas...")
+            }
+                else{
+                    callbackerro('Erro ao recuperar')
+                } 
+        }
+        //encaminhando funcao como parametro
+        var sucesso = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>' )
+            document.write('<hr />'                  )
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        //encaminhando funcao como parametro
+        var erro = function(erro){
+        document.write('<p><b>erro: </b>' + erro + '</p>' )
+
+        }
+
+        exibirArtigo(1, sucesso, erro)
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
