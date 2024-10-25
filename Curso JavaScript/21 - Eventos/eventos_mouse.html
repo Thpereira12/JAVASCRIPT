@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+        function acao(){
+            alert('Evento Disparado')
+        }
+
+        function acao2(){
+            alert('Segundo evento')
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <!--onclick o elemnteto é acionado quando clicado -->
+    <div onclick= "acao()" style="background: #ccc; height: 150px; width: 150px; ;";>onclick</div>
+
+    <br>
+
+    <!--ondblclick o elemnteto é acionado quando clicado duas vezes sequenciais -->
+    <div ondblclick= "acao()" style="background: #ccc; height: 150px; width: 150px; ;";>ondblclick</div>
+    
+    <br>
+    <!--onmouseup é disparado quando um determinado elemento é liberado (Clicar segurar e soltar) -->
+    <div onmouseup= "acao()" style="background: #ccc; height: 150px; width: 150px; ;";>onmouseup</div>
+
+    <br>
+    <!--onmouseover é acionado quando o cursor do mouse sobrepoe a regiao do elemento dentro do browser (Passar cursor por cima da area) -->
+    <div onmouseover= "acao()" style="background: #ccc; height: 150px; width: 150px; ;";>onmouseover</div>
+
+    <br>
+
+    <!--onmouseout é acionado quando o cursor do mouse sai da regiao do elemento dentro do browser (Cursor sai da area do elemento) -->
+    <div onmouseout= "acao()" style="background: #ccc; height: 150px; width: 150px; ;";>onmouseout</div>
+    
+    <br>
+
+    <!--os elementos podem ser combinados -->
+    <div onclick = "acao()" onmouseout= "acao2()" style="background: #ccc; height: 150px; width: 150px; ;";>Evento combinado</div>
+</body>
+</html>
